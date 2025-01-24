@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #62161e, #720033, #69007d, #212ba9);
+    background-size: 300% 300%;
+    animation: gradientShift 8s ease infinite;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    max-width: 1000px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.camera-section, .decoded-section {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+video {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+}
+
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.primary-btn {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #212ba9;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background-color: #69007d;
+}
+
+.secondary-btn {
+    background: linear-gradient(to right, #62161e, #720033, #69007d, #212ba9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.secondary-btn:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #212ba9, #69007d, #770054, #720033, #62161e);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.decoded-section {
+    padding: 1rem; /* Adjust padding for the container */
+    margin-top: 0; /* Ensure no extra vertical spacing */
+}
+
+#result {
+    margin: 0; /* Remove unnecessary margins */
+    padding: 1rem; /* Keep consistent padding */
+    font-family: monospace;
+    font-size: 1rem;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    white-space: pre-wrap;
+}
+
+.data-table {
+    display: block; /* Makes the table scrollable */
+    overflow-x: auto; /* Horizontal scrolling if content overflows */
+    white-space: nowrap; /* Prevent table cells from wrapping */
+}
+
+/* Header Styling */
+.data-table th {
+    background-color: #212ba9; /* Dark blue header background */
+    color: #ffffff; /* White text color for headers */
+    padding: 0.75rem; /* Padding inside the header cells */
+    text-align: left; /* Align text to the left */
+    border: 1px solid #ddd; /* Border between header cells */
+    text-transform: capitalize; /* Capitalize header text */
+    font-weight: 600; /* Bold headers */
+}
+
+/* Data Cell Styling */
+.data-table td {
+    background-color: #f9f9f9; /* Light gray background for cells */
+    padding: 0.75rem; /* Padding inside the cells */
+    border: 1px solid #ddd; /* Border around data cells */
+    text-align: left; /* Align text to the left */
+}
+
+/* Hover Effect for Rows */
+.data-table tr:hover td {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container { padding: 1.5rem; }
+    header h1 { font-size: 1.5rem; }
+    header p { font-size: 0.9rem; }
+    h2 { font-size: 1.1rem; }
+    .btn { padding: 0.65rem 1rem; font-size: 0.9rem; }
+    #result { font-size: 0.9rem; }
+    .data-table th,
+    .data-table td {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 { font-size: 1.25rem; }
+    header p { font-size: 0.8rem; }
+    .btn { padding: 0.5rem 0.75rem; font-size: 0.85rem; }
+    h2 { font-size: 1rem; }
+    .data-table th,
+    .data-table td {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+}
