@@ -1,14 +1,7 @@
-# Ignore virtual environment
-venv/
-
-# Ignore git-related files
-.git/
-
-# Ignore local development files
-*.log
-
-# Ignore node_modules (if any)
-node_modules/
-
-# Ignore unnecessary Python files
+*.pyc
 __pycache__/
+venv/
+tests/
+docs/
+node_modules/
+large_media_files/
