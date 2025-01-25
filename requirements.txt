@@ -30,15 +30,14 @@ jws
 MarkupSafe
 msgpack
 numpy
-oauth2client
-opencv-python
+opencv-python-headless  # Replaced opencv-python with opencv-python-headless
 pillow
 proto-plus
 protobuf
 pyasn1
 pyasn1_modules
 pycparser
-pycryptodome
+pycryptodome  # Replaced pycrypto with pycryptodome
 PyJWT
 pyparsing
 Pyrebase
