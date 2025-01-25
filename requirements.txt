@@ -54,4 +54,3 @@ six
 uritemplate
 urllib3
 Werkzeug
-g
