@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def scanner():
-    return render_template('scanner.html')
+    return render_template('index.html')
 
 @app.route('/decode_qr', methods=['POST'])
 def decode_qr():
