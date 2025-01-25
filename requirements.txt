@@ -9,7 +9,7 @@ cryptography==44.0.0
 firebase-admin==6.6.0
 Flask==2.1.3
 Flask-Cors==5.0.0
-gcloud==0.17.0    
+gcloud==0.17.0
 google-api-core==2.24.0
 google-api-python-client==2.159.0
 google-auth==2.37.0
@@ -30,7 +30,7 @@ jws==0.1.3
 MarkupSafe==3.0.2
 msgpack==1.1.0
 numpy==2.2.2
-oauth2client==4.1.3
+oauth2client==3.0.0    # Remove version conflict by using the correct version required by Pyrebase
 opencv-python==4.11.0.86
 pillow==11.1.0
 proto-plus==1.25.0
