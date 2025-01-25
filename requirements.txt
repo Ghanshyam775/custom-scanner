@@ -37,7 +37,7 @@ protobuf
 pyasn1
 pyasn1_modules
 pycparser
-pycryptodome  # Replaced pycrypto with pycryptodome
+pycryptodome  # Explicitly use pycryptodome instead of pycrypto
 PyJWT
 pyparsing
 Pyrebase
